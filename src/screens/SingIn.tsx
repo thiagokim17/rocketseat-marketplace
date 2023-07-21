@@ -1,12 +1,7 @@
 import {
-  Box,
   Center,
-  Container,
-  Flex,
   Heading,
   Image,
-  SimpleGrid,
-  Spacer,
   Stack,
   Text,
   VStack,
