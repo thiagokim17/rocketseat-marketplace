@@ -1,11 +1,4 @@
-import {
-  Center,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  VStack,
-} from "native-base";
+import { Center, Heading, Image, Stack, Text, VStack } from "native-base";
 import MktsLogo from "../../assets/mktsLogo.png";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
@@ -24,20 +17,23 @@ export const SingIn = () => {
           <Heading fontFamily={"body"} size="sm" mb={4} color={"gray.2"}>
             Acesse sua conta
           </Heading>
-          <Input
-            placeholder="E-mail"
-            keyboardType="email-address"
-            autoCapitalize="none"
-          />
-          <Input placeholder="Senha" type="password" />
+          <Input variant="email" />
+          <Input variant="password" />
           <Button title={"Entrar"} variant={"primary"} />
         </Center>
       </VStack>
-      <Stack space="xs" my="4" px="10" alignItems={"center"} flex={1} justifyContent={'center'}>
+      <Stack
+        space="xs"
+        my="4"
+        px="10"
+        alignItems={"center"}
+        flex={1}
+        justifyContent={"center"}
+      >
         <Heading fontFamily={"body"} size="sm" color={"gray.2"}>
           Ainda não tem acesso?
         </Heading>
-        <Button title={"Entrar"} variant={"muted"} />
+        <Button title={"Entrar"} variant={"muted"} mb={12} />
       </Stack>
     </>
   );

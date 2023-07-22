@@ -10,7 +10,7 @@ export const Button = ({ title, variant, ...rest }: Props) => {
     switch (variant) {
       case "primary":
         return "blue.light";
-      case "primary":
+      case "secondary":
         return "gray.1";
       default:
         return "gray.5";
@@ -23,7 +23,7 @@ export const Button = ({ title, variant, ...rest }: Props) => {
       bg={bgColor()}
       w={"full"}
       mt={4}
-      mb={12}
+      mb={4}
       {...rest}
     >
       <Text
